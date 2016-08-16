@@ -23,8 +23,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-//jeess2132
-
 
     View.OnClickListener clicInicioSesion = new View.OnClickListener() {
         @Override
