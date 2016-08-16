@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/seguretat"
+    android:focusableInTouchMode="false">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mensaje"
+        android:text="Antes de Actuar, Evalúa los Riesgos"
+        android:textSize="25sp"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/mensaje"
+        android:layout_alignEnd="@+id/mensaje"
+        android:layout_alignParentRight="true"
+        android:background="#60349742"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/nombreEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Empresa"
+            android:textColor="#00838f"
+            android:paddingLeft="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:id="@+id/contraseñaEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:layout_below="@id/nombreEmpresa"
+            android:textColor="#00838f"
+            android:paddingLeft="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:inputType="textPassword"
+            android:password="true"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¡Obtener Ayuda!"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="INICIAR SESIÓN"
+            android:background="#60349742"
+            android:id="@+id/buttonIniciarSesion" />
+
+    </LinearLayout>
+
+</RelativeLayout>

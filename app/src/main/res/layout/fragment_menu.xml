@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.Menu">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Descargas"
+            android:drawingCacheQuality="@drawable/ic_file_download_black_48dp"
+            android:id="@+id/buttonDescargas"
+            android:textSize="20sp"
+            android:background="#66BB6A"
+            android:padding="10dp"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@id/buttonDescargas"
+            android:layout_height="match_parent"
+            android:text="Unidades de Verificación"
+            android:id="@+id/buttonUnidades"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:background="#A5D6A7"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@id/buttonUnidades"
+            android:layout_height="match_parent"
+            android:text="Comisión de Seguridad e Higiene"
+            android:id="@+id/buttonComision"
+            android:background="#66BB6A"
+            android:textSize="20sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_below="@id/buttonComision"
+            android:layout_height="match_parent"
+            android:text="Diagnostico de Verificación"
+            android:id="@+id/buttonDiagnostico"
+            android:textSize="20sp"
+            android:background="#A5D6A7"/>
+
+    </RelativeLayout>
+</ScrollView>
